@@ -166,13 +166,17 @@ if(isset($_GET["num"])){
 
 <?php
 
-for($i=1;$i<=12;$i++){
+$i = 1;
+
+while($i <= 12){
 
     echo "<tr>";
     echo "<td>$num x $i</td>";
     echo "<td>=</td>";
-    echo "<td>".($num*$i)."</td>";
+    echo "<td>".($num * $i)."</td>";
     echo "</tr>";
+
+    $i++;
 
 }
 
